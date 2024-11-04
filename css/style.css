@@ -184,6 +184,12 @@ body {
   grid-template-columns: auto 280px;
   grid-template-rows: auto 150px;
   gap: 40px;
+  margin-bottom: 25px;
+}
+
+.tabs__content-img {
+  grid-row: 1/-1;
+  align-self: stretch;
 }
 
 .tabs__content-box h3 {
@@ -193,6 +199,7 @@ body {
 }
 
 .video {
+  grid-column: 2/3;
   width: 280px;
   height: 150px;
   background-image: url(/images/content\ 1.png);
@@ -204,6 +211,7 @@ body {
   justify-content: end;
   align-items: flex-start;
   padding: 9px 10px;
+  margin-bottom: 20px;
 }
 
 .video span {
