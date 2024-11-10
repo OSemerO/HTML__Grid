@@ -341,3 +341,42 @@ body {
     transform-origin: right center;
   }
 }
+
+.equip {
+  margin-top: 110px;
+}
+
+.equip__subtitle {
+  margin-bottom: 50px;
+}
+
+.equip__box {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.equip__box-img {
+  margin-bottom: 10px;
+}
+
+.equip__box-title {
+  font-weight: 400;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 50px;
+  margin-top: -10px;
+}
+
+.equip__box-item--one {
+  grid-row: 1/-1;
+}
+
+.equip .equip__box-img {
+  max-width: auto;
+}
