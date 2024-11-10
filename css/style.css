@@ -76,8 +76,7 @@ body {
   gap: 0 20px;
 }
 
-.basket,
-.footer__icons {
+.basket {
   justify-self: end;
 }
 
@@ -379,4 +378,83 @@ body {
 
 .equip .equip__box-img {
   max-width: auto;
+}
+
+.promo {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.promo__inner {
+  background-image: url(../images/Metaverse.png);
+  min-height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  position: relative;
+}
+
+.promo-btn {
+  font-weight: 700;
+  color: #ffff;
+  background: linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 75px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.contacts {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.contacts__title {
+  color: black;
+  line-height: 33px;
+  margin-bottom: 10px;
+}
+.contacts__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.contacts__form {
+  flex-basis: 600px;
+}
+.form {
+  margin-bottom: 10px;
+  position: relative;
+}
+.form__input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #cacad6;
+  padding: 22px 70px 22px 0;
+}
+.form__btn {
+  width: 50px;
+  height: 50px;
+  background-color: #cacad6;
+  border-radius: 50%;
+  font-weight: 700;
+  color: grey;
+  position: absolute;
+  right: 0;
+  bottom: 5px;
+}
+.contacts__text {
+  font-size: 0.8em;
+}
+
+.social {
+  justify-self: end;
 }
