@@ -474,6 +474,16 @@ body {
   .tabs__btn-item {
     display: block;
   }
+
+  .game__inner {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .equip__box {
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -524,6 +534,11 @@ body {
     width: auto;
     height: 250px;
     margin-top: 20px;
+  }
+
+  .game__inner {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 25px;
   }
 }
 
