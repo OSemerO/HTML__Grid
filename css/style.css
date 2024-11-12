@@ -87,6 +87,7 @@ body {
 .top {
   min-height: calc(100vh - 81px);
   background-image: url(/images/bg\ top.jpg);
+  max-width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
@@ -191,6 +192,7 @@ body {
 .tabs__content-img {
   grid-row: 1/-1;
   align-self: stretch;
+  object-fit: cover;
 }
 
 .tabs__content-box h3 {
@@ -457,4 +459,84 @@ body {
 
 .social {
   justify-self: end;
+}
+
+@media screen and (max-width: 992px) {
+  .tabs {
+    display: block;
+  }
+
+  .tabs__btn {
+    display: block;
+    column-count: 2;
+  }
+
+  .tabs__btn-item {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .top__title {
+    font-size: 4em;
+  }
+
+  .top__subtitle {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .top__container {
+    text-align: center;
+  }
+  .top__title {
+    font-size: 3em;
+  }
+
+  .top__subtitle {
+    font-size: 1.5em;
+  }
+
+  .buy-btn {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .features__titles {
+    display: block;
+  }
+
+  .features__subtitle {
+    font-size: 1.5em;
+  }
+
+  .features__text {
+    font-size: 2em;
+    margin-bottom: 15px;
+  }
+
+  .tabs__content-item {
+    display: block;
+  }
+
+  .video {
+    width: auto;
+    height: 250px;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .top__title {
+    font-size: 2em;
+  }
+
+  .top__subtitle {
+    font-size: 0.8em;
+  }
+
+  .tabs__btn {
+    column-count: 1;
+  }
 }
