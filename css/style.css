@@ -1,171 +1,29 @@
-@font-face {
-  font-family: "Intro";
-  src: url(../fonts/intro.otf);
-}
-@font-face {
-  font-family: "Roboto Slab";
-  src: url(../fonts/RobotoSlab.ttf);
-}
-img {
-  width: 100%;
-  height: 100%;
-}
-h1 {
-  font-family: "Intro";
-  font-style: normal;
-  font-weight: 400;
-  font-size: calc(40px + 20 * (100vw / 1440));
-  margin: 0;
-}
 .header {
-  max-width: 93%;
-  margin: 0 auto;
-  margin-top: 5%;
-  display: flex;
-  align-items: center;
-  flex-wrap: nowrap;
   justify-content: space-between;
 }
-.header__basket {
-  width: 100px;
-  height: 50px;
+.title {
+  background-color: rgb(217, 217, 217);
+  border-radius: 8px;
+  padding-bottom: 5%;
 }
-.content {
-  margin-top: 1%;
-  display: grid;
-  grid-template-areas:
-    "content__block-text content__img"
-    "content__nav content__img";
+.fon {
+  background-color: rgba(128, 128, 128, 0.44);
+  height: 4rem;
 }
-.content__block-text {
-  grid-area: content__block-text;
-  display: grid;
-  grid-template-rows: 40% 40% 20%;
-  margin: 10% 1% 0 15%;
-  justify-items: start;
+.footer {
+  margin-top: 10%;
 }
-.content__text,
-.opportunities__text {
-  font-family: "Roboto Slab";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 1.25em;
-  line-height: 160%;
-  margin-top: 8%;
+.bd-placeholder-img {
+  font-size: 2.2rem;
+  color: rgb(77, 71, 71);
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
-.content__link {
-  max-height: 60%;
-}
-.content__nav {
-  grid-area: content__nav;
-  margin-left: 10%;
-  margin-bottom: 20px;
-}
-.content__list {
-  display: flex;
-  margin-top: 18%;
-  justify-content: space-between;
-}
-li {
-  list-style-type: none;
-}
-.content__link {
-  font-family: "Roboto Slab";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 20px;
-  color: #5222d0;
-  text-decoration: none;
-}
-.content__img {
-  grid-area: content__img;
-  background-image: url(../images/background.svg);
-  width: 59vw;
-  height: 80vh;
-}
-.content__man {
-  height: 95%;
-  width: 80%;
-  margin-left: 2%;
-}
-@media screen and (max-width: 767px) {
-  h1 {
-    font-weight: 300;
-    font-size: calc(40px + (20 + 20 * 0.7) * ((100vw - 320px) / 1440));
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
   }
 }
-/* opportunities start */
-.opportunities {
-  display: flex;
-  flex-direction: column;
-  max-width: 88%;
-  margin: 0 auto;
-  margin-top: 5%;
-}
-.opportunities__box {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 2fr 1fr;
-  column-gap: 5px;
-  row-gap: 15px;
-  margin-top: 2%;
-  align-items: start;
-}
-.opportunities__card {
-  margin: 1%;
-}
-.opportunities__img {
-  padding: 1%;
-}
-.opportunities__subtitle {
-  font-family: "Intro";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 120%;
-}
-.opportunities__card_orange {
-  background-color: #ec615b;
-}
-.opportunities__subtitle_white {
-  color: white;
-  margin: 2%;
-}
-.opportunities__input {
-  font-family: "Roboto Slab";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 1em;
-  line-height: 160%;
-  color: #000000;
-  border: none;
-  margin: 2%;
-}
-.opportunities__button {
-  margin: 2%;
-  /* width: 40%; */
-  height: 8%;
-  text-decoration: none;
-  border: none;
-  border-radius: 100px;
-  padding: 14px 24px;
-  background: #5222d0;
-  color: white;
-  font-family: "Intro";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1em;
-  line-height: 35px;
-  display: flex;
-  text-align: center;
-  align-items: center;
-}
-.content__nav_left {
-  margin-left: 0;
-  width: 40%;
-  padding: 0;
-}
-.content__link_black {
-  color: black;
-}
-/* opportunities start */
